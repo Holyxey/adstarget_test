@@ -1,7 +1,8 @@
-// open full review div
+// open full review div on Videoprod
+
+let setI = 0;
 
 function testReviewClick(el) {
-    let setI = 0;
     
     if (setI == 0) {
         el.style.cssText = "height:unset; max-height:unset";
@@ -9,5 +10,9 @@ function testReviewClick(el) {
     } else {
         el.style.cssText = "height:40vh; max-height:350px";
         setI--;
-    }
+    } 
+}
+function IisUno(el) {
+    el.style.cssText = "height:40vh; max-height:350px";
+    setI = 0;
 }
